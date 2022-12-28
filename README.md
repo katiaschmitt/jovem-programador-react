@@ -4,7 +4,11 @@ Projeto para estudos de desenvolvimento web usando ReactJs e NextJs
 
 ## Requisitos
 
-1. NodeJs Instalado na máquina - [Link do NodeJs](https://nodejs.org/en/)
+1. NodeJs Instalado na máquina - [Link para Download - NodeJs](https://nodejs.org/en/)
+2. Visual Studio Code - [Link para Download - VS Code](https://code.visualstudio.com/)
+
+<strong>NODEJS</strong> é o servidor local onde a aplicação será executada em ambiente de desenvolvimento. Junto com ele são instaladas outras ferramentas que utilizaremos para configurar o projeto uma delas é o npm (gerenciador de pacotes) que usaremos pra rodar alguns comandos e instalar as dependências do projeto.</br>
+<strong>Visual Studio Code</strong> é o editor de código utilizado para programar e criar a aplicação.
 
 ### Bibliotecas utilizadas no projeto
 
@@ -18,26 +22,33 @@ Para começar acesse o link abaixo e baixe o projeto na sua máquina:
 ```sh
 https://github.com/katiaschmitt/jovem-programador-react
 ```
-<img src="https://github.com/HasarBrasilDesenvolvimento/jovem-programador/blob/main/public/log-start.png" />
+</br>
+<img src="https://github.com/katiaschmitt/jovem-programador-react/blob/master/public/1.png" />
 
-Após baixar o projeto e descompacta-lo acesse a pasta principal no prompt de comando.
-DICA: Para acessar a pasta no prompt de comando navege até a pasta que deseja abrir no prompt e na barra de endereço digite 'cmd' e aperte ENTER
+## Acessando a pasta do projeto
 
-Navegue até a pasta:
-<img src="https://github.com/HasarBrasilDesenvolvimento/jovem-programador/blob/main/public/log-start.png" />
+Após baixar o projeto e descompacta-lo acesse a pasta principal no prompt de comando.</br>
+DICA: Para acessar a pasta no prompt de comando navege até a pasta que deseja abrir e na barra de endereço digite 'cmd' e aperte ENTER
+
+<i>Navegue até a pasta:</i>
+</br>
+<img src="https://github.com/katiaschmitt/jovem-programador-react/blob/master/public/2.png" />
 
 
-Digitando 'cmd' na barra de endereço:
-<img src="https://github.com/HasarBrasilDesenvolvimento/jovem-programador/blob/main/public/log-start.png" />
+<i>Digitando 'cmd' na barra de endereço:</i>
+</br>
+<img src="https://github.com/katiaschmitt/jovem-programador-react/blob/master/public/3.png" />
 
 
-Prompt aberto na pasta desejada:
-<img src="https://github.com/HasarBrasilDesenvolvimento/jovem-programador/blob/main/public/log-start.png" />
+<i>Prompt aberto na pasta desejada:</i>
+</br>
+<img src="https://github.com/katiaschmitt/jovem-programador-react/blob/master/public/4.png" />
 
 
 ## Instalar dependências
 
-Agora precisamos instalar todas as dependencias do projeto, fazemos isso executando o comando abaixo dentro da pasta principal do projeto clonado:
+Agora precisamos instalar todas as dependencias do projeto, fazemos isso executando o comando abaixo:
+</br>
 Esse processo pode demorar um pouquinho ok!
 
 ```
@@ -55,4 +66,4 @@ npm run dev
 Se não ocorrer nenhum erro, a aplicação iniciará e será mostrado no console o link para acessar no seu navegador
 
 
-<img src="https://github.com/HasarBrasilDesenvolvimento/jovem-programador/blob/main/public/log-start.png" />
+<img src="https://github.com/katiaschmitt/jovem-programador-react/blob/master/public/log-start.png" />
