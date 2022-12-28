@@ -12,23 +12,33 @@ Projeto para estudos de desenvolvimento web usando ReactJs e NextJs
 2. React Icons - https://react-icons.github.io/react-icons/icons?name=fa
 3. Axios (para requisições) - https://axios-http.com/ptbr/docs/intro
 
-## Clonando o projeto
-Para começar acesse o prompt de comando na sua máquina e execute o seguinte comando abaixo:
+## Baixando o projeto
+Para começar acesse o link abaixo e baixe o projeto na sua máquina:
 
 ```sh
-git clone https://github.com/HasarBrasilDesenvolvimento/jovem-programador.git
+https://github.com/katiaschmitt/jovem-programador-react
 ```
+<img src="https://github.com/HasarBrasilDesenvolvimento/jovem-programador/blob/main/public/log-start.png" />
 
-Após clonar o projeto acesse a pasta raiz do projeto criada:
+Após baixar o projeto e descompacta-lo acesse a pasta principal no prompt de comando.
+DICA: Para acessar a pasta no prompt de comando navege até a pasta que deseja abrir no prompt e na barra de endereço digite 'cmd' e aperte ENTER
 
-```sh
-cd jovem-programador
-```  
+Navegue até a pasta:
+<img src="https://github.com/HasarBrasilDesenvolvimento/jovem-programador/blob/main/public/log-start.png" />
+
+
+Digitando 'cmd' na barra de endereço:
+<img src="https://github.com/HasarBrasilDesenvolvimento/jovem-programador/blob/main/public/log-start.png" />
+
+
+Prompt aberto na pasta desejada:
+<img src="https://github.com/HasarBrasilDesenvolvimento/jovem-programador/blob/main/public/log-start.png" />
+
 
 ## Instalar dependências
 
-Agora precisamos instalar todas as dependencias do projeto, fizemos isso executando o comando abaixo dentro da pasta principal do projeto clonado:
-Esse processo demora um pouquinho ok!
+Agora precisamos instalar todas as dependencias do projeto, fazemos isso executando o comando abaixo dentro da pasta principal do projeto clonado:
+Esse processo pode demorar um pouquinho ok!
 
 ```
 npm i
