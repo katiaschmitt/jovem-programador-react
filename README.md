@@ -4,7 +4,7 @@ Projeto para estudos de desenvolvimento web usando ReactJs e NextJs
 
 ## Requisitos
 
-1. NodeJs Instalado na máquina - [Link para Download - NodeJs](https://nodejs.org/en/)
+1. NodeJs Instalado na máquina (versão LTS)- [Link para Download - NodeJs](https://nodejs.org/en/)
 2. Visual Studio Code - [Link para Download - VS Code](https://code.visualstudio.com/)
 
 <strong>NODEJS</strong> é o servidor local onde a aplicação será executada em ambiente de desenvolvimento. Junto com ele são instaladas outras ferramentas que utilizaremos para configurar o projeto uma delas é o npm (gerenciador de pacotes) que usaremos pra rodar alguns comandos e instalar as dependências do projeto.</br>
@@ -17,7 +17,7 @@ Projeto para estudos de desenvolvimento web usando ReactJs e NextJs
 3. Axios (para requisições) - https://axios-http.com/ptbr/docs/intro
 
 ## Baixando o projeto
-Para começar acesse o link abaixo e baixe o projeto na sua máquina:
+Para começar acesse o repositório abaixo e baixe o projeto na sua máquina:
 
 ```sh
 https://github.com/katiaschmitt/jovem-programador-react
@@ -52,7 +52,7 @@ Agora precisamos instalar todas as dependencias do projeto, fazemos isso executa
 Esse processo pode demorar um pouquinho ok!
 
 ```
-npm i
+npm install
 ```
 
 ## Iniciando a aplicação
