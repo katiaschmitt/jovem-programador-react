@@ -28,7 +28,7 @@ export default function Alunos() {
 
   // Chamada Api Buscar alunos
 
-  function AdicionarAluno(aluno) {
+  function adicionarAluno(aluno) {
     // Simulando o increment do banco
     aluno.id = alunos.length + 1;
     setAlunos((old) => [...alunos, aluno]);
@@ -43,7 +43,7 @@ export default function Alunos() {
     //   });
   }
 
-  function EditarAluno(novoAluno) {
+  function editarAluno(novoAluno) {
     // Cria um nova lista revomendo o aluno existente para depois inseri-lo novamente com as informações atualizadas
     const novaListaAlunos = alunos.filter((a) => a.id != novoAluno.id);
 
@@ -59,7 +59,7 @@ export default function Alunos() {
     //   });
   }
 
-  function RemoverAluno(id) {
+  function removerAluno(id) {
     setAlunos(alunos.filter((aluno) => aluno.id != id));
 
     // axios
@@ -72,10 +72,10 @@ export default function Alunos() {
     //   });
   }
 
-  function AbrirModal() {
+  function abrirModal() {
     setShow(true);
   }
-  function FecharModal() {
+  function fecharModal() {
     setShow(false);
   }
 
@@ -84,7 +84,7 @@ export default function Alunos() {
   return (
     <div>
       <MenuSuperior />
-      <ModalAdicionarAluno open={show} onClose={FecharModal} AdicionarAluno={AdicionarAluno} />
+      <ModalAdicionarAluno open={show} onClose={fecharModal} adicionarAluno={adicionarAluno} />
       <Stack style={{alignItems: "center", minHeight: "100vh"}}>
         <Col md={8}>
           <Stack
@@ -92,10 +92,10 @@ export default function Alunos() {
             className="d-flex align-items-center justify-content-between"
           >
             <h4 style={{marginTop: 32, marginBottom: 16}}>Relatório de alunos</h4>
-            <Button onClick={AbrirModal}>Adicionar</Button>
+            <Button onClick={abrirModal}>Adicionar</Button>
           </Stack>
 
-          <Tabela alunos={alunos} EditarAluno={EditarAluno} RemoverAluno={RemoverAluno} />
+          <Tabela alunos={alunos} editarAluno={editarAluno} removerAluno={removerAluno} />
         </Col>
       </Stack>
     </div>

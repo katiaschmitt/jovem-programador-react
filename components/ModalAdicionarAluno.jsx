@@ -1,9 +1,9 @@
-import { useState } from "react";
+import {useState} from "react";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import Modal from "react-bootstrap/Modal";
 
-export default function ModalAdicionarAluno({ open, onClose, AdicionarAluno }) {
+export default function ModalAdicionarAluno({open, onClose, adicionarAluno}) {
   const [nome, setNome] = useState("");
   const [idade, setIdade] = useState("");
   const [contato, setContato] = useState("");
@@ -19,7 +19,7 @@ export default function ModalAdicionarAluno({ open, onClose, AdicionarAluno }) {
       cep: cep,
     };
 
-    AdicionarAluno(aluno);
+    adicionarAluno(aluno);
 
     onClose();
   }
@@ -45,7 +45,11 @@ export default function ModalAdicionarAluno({ open, onClose, AdicionarAluno }) {
         <Form>
           <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
             <Form.Label>Idade</Form.Label>
-            <Form.Control value={idade} placeholder="Insira a idade" onChange={(e) => setIdade(e.target.value)} />
+            <Form.Control
+              value={idade}
+              placeholder="Insira a idade"
+              onChange={(e) => setIdade(e.target.value)}
+            />
           </Form.Group>
         </Form>
         <Form>

@@ -1,4 +1,3 @@
-
 export default function Alunos(req, res) {
   switch (req.method) {
     case "GET":

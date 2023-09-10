@@ -1,22 +1,27 @@
-import { useState } from "react";
-import { Table } from "react-bootstrap";
-import { FaRegEdit, FaRegTrashAlt } from "react-icons/fa";
+import {useState} from "react";
+import {Table} from "react-bootstrap";
+import {FaRegEdit, FaRegTrashAlt} from "react-icons/fa";
 import ModalEditarAluno from "./ModalEditarAluno";
 
-export default function Tabela({ alunos, RemoverAluno, EditarAluno }) {
+export default function Tabela({alunos, removerAluno, editarAluno}) {
   const [show, setShow] = useState(false);
   const [alunoAtual, setAlunoAtual] = useState(null);
 
-  function FecharModal() {
+  function fecharModal() {
     setShow(false);
   }
-  function AbrirModal() {
+  function abrirModal() {
     setShow(true);
   }
 
   return (
     <Table striped bordered hover>
-      <ModalEditarAluno open={show} onClose={FecharModal} aluno={alunoAtual} EditarAluno={EditarAluno}/>
+      <ModalEditarAluno
+        open={show}
+        onClose={fecharModal}
+        aluno={alunoAtual}
+        editarAluno={editarAluno}
+      />
       <thead>
         <tr>
           <th>Id</th>
@@ -38,16 +43,19 @@ export default function Tabela({ alunos, RemoverAluno, EditarAluno }) {
               <td>{aluno.contato}</td>
               <td>{aluno.email}</td>
               <td>{aluno.cep}</td>
-              <td className="d-flex justify-content-around" style={{ padding: 15, cursor: "pointer" }}>
+              <td
+                className="d-flex justify-content-around"
+                style={{padding: 15, cursor: "pointer"}}
+              >
                 <FaRegEdit
                   size={18}
                   color="#84E296"
                   onClick={() => {
                     setAlunoAtual(aluno);
-                    AbrirModal();
+                    abrirModal();
                   }}
                 />
-                <FaRegTrashAlt size={18} color="#C41E3D" onClick={() => RemoverAluno(aluno.id)} />
+                <FaRegTrashAlt size={18} color="#C41E3D" onClick={() => removerAluno(aluno.id)} />
               </td>
             </tr>
           );
