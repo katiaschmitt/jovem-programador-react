@@ -1,6 +1,6 @@
 import axios from "axios";
-import { useState } from "react";
-import { Button, Col, Stack } from "react-bootstrap";
+import {useState} from "react";
+import {Button, Col, Stack} from "react-bootstrap";
 import MenuSuperior from "../components/MenuSuperior";
 import ModalAdicionarAluno from "../components/ModalAdicionarAluno";
 import Tabela from "../components/Tabela";
@@ -10,19 +10,19 @@ export default function Alunos() {
   const [alunos, setAlunos] = useState([
     {
       id: 1,
-      nome: "Diego",
-      idade: 31,
-      email: "diego@gmail.com",
-      contato: "47 99177 4897",
-      cep: "88360000",
+      nome: "João",
+      idade: 22,
+      email: "joao@teste.com",
+      contato: "99 99999 9999",
+      cep: "88555120",
     },
     {
       id: 2,
-      nome: "Pedro",
-      idade: 22,
-      email: "pedro@gmail.com",
-      contato: "47 99845 8759",
-      cep: "58896521",
+      nome: "Maria",
+      idade: 19,
+      email: "maria@teste.com",
+      contato: "88 88888 8888",
+      cep: "88555130",
     },
   ]);
 
@@ -32,7 +32,6 @@ export default function Alunos() {
     // Simulando o increment do banco
     aluno.id = alunos.length + 1;
     setAlunos((old) => [...alunos, aluno]);
-
 
     // axios
     //   .post(`/api/aluno`, aluno)
@@ -63,7 +62,6 @@ export default function Alunos() {
   function RemoverAluno(id) {
     setAlunos(alunos.filter((aluno) => aluno.id != id));
 
-  
     // axios
     //   .delete(`/api/aluno/${id}`)
     //   .then((res) => {
@@ -87,10 +85,13 @@ export default function Alunos() {
     <div>
       <MenuSuperior />
       <ModalAdicionarAluno open={show} onClose={FecharModal} AdicionarAluno={AdicionarAluno} />
-      <Stack style={{ alignItems: "center", minHeight: "100vh" }}>
+      <Stack style={{alignItems: "center", minHeight: "100vh"}}>
         <Col md={8}>
-          <Stack direction="horizontal" className="d-flex align-items-center justify-content-between">
-            <h4 style={{ marginTop: 32, marginBottom: 16 }}>Relatório de alunos</h4>
+          <Stack
+            direction="horizontal"
+            className="d-flex align-items-center justify-content-between"
+          >
+            <h4 style={{marginTop: 32, marginBottom: 16}}>Relatório de alunos</h4>
             <Button onClick={AbrirModal}>Adicionar</Button>
           </Stack>
 
